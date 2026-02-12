@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intern : SPr PPD Sik</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body {
+            background: linear-gradient(to right, #c3cbfc, #8ec5fc, #d1d9ff);
+            font-family: "Karma", sans-serif;
+            margin: 0;
+        }
+        .header {
+            background-color: #0039a6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .box {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .add-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .nav-buttons {
+            display: none;
+            margin-top: 10px;
+        }
+        .nav-buttons button {
+            background: #0044cc;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="w3-sidebar" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-bar-item">Close Menu</a>
+        <a href="#intern" onclick="w3_close()" class="w3-bar-item">Intern</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item">About Me</a>
+    </nav>
+
+    <div class="header">
+        <span class="menu-icon" onclick="w3_open()">&#9776;</span>
+        Intern: SPr PPD Sik
+        <span style="cursor: pointer;">📞</span>
+    </div>
+
+    <div class="grid-container">
+        <div class="box">
+            <button class="add-btn" onclick="toggleNavButtons(this)">+</button>
+            <img src="time.gif" alt="Timeline Bengkel" style="width:50px;">
+            <h3>Timeline Bengkel</h3>
+            <div class="nav-buttons">
+                <button>Masa</button>
+                <button>Tempat</button>
+                <button>Slide</button>
+            </div>
+        </div>
+        <div class="box">
+            <button class="add-btn" onclick="toggleNavButtons(this)">+</button>
+            <img src="bigdata.gif" alt="Big Data" style="width:50px;">
+            <h3>Big Data</h3>
+            <div class="nav-buttons">
+                <button>Masa</button>
+                <button>Tempat</button>
+                <button>Slide</button>
+            </div>
+        </div>
+        <div class="box">
+            <button class="add-btn" onclick="toggleNavButtons(this)">+</button>
+            <img src="coding.gif" alt="Coding" style="width:50px;">
+            <h3>Coding</h3>
+            <div class="nav-buttons">
+                <button>Masa</button>
+                <button>Tempat</button>
+                <button>Slide</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleNavButtons(button) {
+            var navButtons = button.parentElement.querySelector('.nav-buttons');
+            navButtons.style.display = navButtons.style.display === "block" ? "none" : "block";
+        }
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+</body>
+</html>

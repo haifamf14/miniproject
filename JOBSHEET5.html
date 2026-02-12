@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epachu Reptile - Registration</title>
+    <link rel="stylesheet" href="JOBSHEET5.css">
+</head>
+<body>
+    <header>
+        <h1>Epachu Reptile.com</h1>
+        <nav>
+            <ul>
+                <li><a href="JOBSHEET4.html">Home</a></li>
+                <li><a href="https://www.backwaterreptiles.com/shipping/reptile-shipping.html" target="_blank">Shipping</a></li>
+                <li><a href="https://www.backwaterreptiles.com/search/search.html#gsc.tab=0" target="_blank">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Customer Registration</h2>
+        <form>
+            <fieldset>
+                <legend>1. User Info</legend>
+                <label>First Name <input type="text" name="first_name"></label>
+                <label>Last Name <input type="text" name="last_name"></label>
+                <label>Email <input type="email" name="email" placeholder="someone@xyz.zzz"></label>
+                <label>Password <input type="password" name="password"></label>
+                <label>Password Repeat <input type="password" name="password_repeat"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Location</legend>
+                <label>Address <input type="text" name="address"></label>
+                <label>City <input type="text" name="city"></label>
+                <label>State <input type="text" name="state"></label>
+                <label>Zip <input type="text" name="zip"></label>
+                <label>Phone <input type="tel" name="phone"></label>
+                <label>Country
+                    <select name="country">
+                        <option>Malaysia</option>
+                        <option>Indonesia</option>
+                        <option>Singapore</option>
+                    </select>
+                </label>
+                <label>Pickup Hub
+                    <input type="radio" name="continent" value="NA"> Kuala Lumpur
+                    <input type="radio" name="continent" value="EU"> Jakarta
+                    <input type="radio" name="continent" value="SA"> Singapore
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Personal Details *optional* </legend>
+                <label>Birth Day <input type="date" name="birth_date"></label>
+                <label>Favorite Reptile Color <input type="color" name="favorite_color"></label>
+                <label>Interest in Reptiles <input type="range" min="0" max="10" name="art_interest"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. All Done</legend>
+                <div class="form-group-agree-containaer">
+                <label> I agree to the <a href="#">Terms of the Site</a></label>
+                <input type="checkbox" id="agree" name="agree">
+                </div>
+                <button type="submit">Sign me up!</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epachu Reptile.com</title>
+        <link rel="stylesheet" href="JOBSHEET7.css">
+    </head>
+<body>
+
+  <div class="header">Reptile : Snake </div>
+
+  <div class="container">
+    <img id="mainImage" class="main-img" src="https://images.ctfassets.net/fbkgl98xrr9f/4ss1eWSUMw9pxqaxaqL6Lq/df3c476ad104996f151caa043e0f0ee5/JBWASYNKNFEWRQVG2Y73MRZ6NE-1024x768.jpg?fm=webp&q=75" alt="Snake species">
+    
+    <div class="thumbnails">
+      <div class="thumbnail" onclick="updateProduct('https://www.reptiles.swelluk.com/media/wordpress/ac6591ebdb75bd9462b143ca3704e562.jpg', 'Boas Snake')">
+        <img src="https://www.reptiles.swelluk.com/media/wordpress/ac6591ebdb75bd9462b143ca3704e562.jpg" alt="ER: Boas Snake">
+      </div>
+      
+      <div class="thumbnail" onclick="updateProduct('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_htDunVbHVR56ptW-_4E-MoWLc1g6zLUJQ&s', 'King Snake')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_htDunVbHVR56ptW-_4E-MoWLc1g6zLUJQ&s" alt="ER: King Snake">
+      </div>
+      
+      <div class="thumbnail" onclick="updateProduct('https://i.pinimg.com/736x/34/99/d0/3499d08b5f1a67cb3f2294620731202b.jpg', 'Phyton Snake')">
+        <img src="https://i.pinimg.com/736x/34/99/d0/3499d08b5f1a67cb3f2294620731202b.jpg" alt="ER: Phyton Snake">
+      </div>
+      <div class="thumbnail" onclick="updateProduct('https://cdn11.bigcommerce.com/s-a3z611ns/images/stencil/1280x1280/products/6896/5485/sn3156972__02586.1529768572.jpg?c=2', 'Rat Snake')">
+        <img src="https://cdn11.bigcommerce.com/s-a3z611ns/images/stencil/1280x1280/products/6896/5485/sn3156972__02586.1529768572.jpg?c=2" alt="ER: Rat Snake">
+      </div>
+    </div>
+  </div>  
+    <div id="productName" class="product-name">Snake Species</div>
+  </div>
+
+  <script>
+    function updateProduct(imageSrc, name) {
+      document.getElementById('mainImage').src = imageSrc;
+      document.getElementById('productName').innerText = name;
+    }
+  </script>
+
+</body>
+</html>

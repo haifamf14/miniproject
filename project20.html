@@ -1,0 +1,42 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+export default function App() {
+  return (
+    <div className="bg-gradient-to-br from-pink-200 to-yellow-100 min-h-screen overflow-hidden">
+      <header className="bg-black text-white py-4 px-6 flex justify-between items-center shadow-lg">
+        <h1 className="text-2xl font-bold">Creative South</h1>
+        <button className="bg-white text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">Register</button>
+      </header>
+
+      <main className="flex flex-col items-center justify-center text-center px-4 py-12 relative">
+        <motion.h2 
+          className="text-5xl md:text-7xl font-extrabold text-white drop-shadow-md"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          Pure
+          <span className="block text-orange-400">Imagination</span>
+        </motion.h2>
+
+        <p className="text-lg md:text-2xl text-white mt-4 mb-8">March 30 – April 1, 2023 | Columbus, GA</p>
+
+        <motion.button 
+          className="bg-white text-black px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-yellow-200"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Get your tickets
+        </motion.button>
+
+        {/* Decorations */}
+        <img src="/wave.svg" className="absolute top-0 left-0 w-full opacity-70 z-0" alt="waves" />
+        <img src="/flower.svg" className="absolute bottom-4 right-6 w-16 md:w-24 animate-bounce" alt="flower" />
+        <img src="/astronaut.svg" className="absolute bottom-8 left-6 w-20 md:w-32 animate-float" alt="astronaut" />
+      </main>
+
+      <footer className="text-center py-6 text-gray-700">© 2023 Creative South</footer>
+    </div>
+  );
+}
